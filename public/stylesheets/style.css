@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: red;
 }
 
 a {
@@ -28,9 +29,6 @@ a i {
 .row:last-of-type {
   margin-bottom: 0;
 }
-.grid,
-
-
 
 .col-3 {
   background-color: rgba(0, 0, 0, 0.05);
