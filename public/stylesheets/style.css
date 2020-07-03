@@ -1,7 +1,6 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: red;
 }
 
 a {
@@ -60,5 +59,11 @@ footer {
   padding: 15px;
 }
 
+
+/*user image*/
+.rounded-circle {
+  width: 50%;
+  height:50%
+}
 
 
