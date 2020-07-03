@@ -10,6 +10,10 @@ a {
 a i {
   margin-right: 0.4rem;
 }
+
+
+
+/*effor*/
 .error404{
   text-align: center;
 }
@@ -20,17 +24,43 @@ a i {
   text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.66);
 }
 
-
+/*col*/
 .row:last-of-type {
   margin-bottom: 0;
 }
 .grid,
-.col {
+
+
+
+.col-3 {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.col {
+.col-3 {
+  padding: 1em;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.col-9 {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.col-9 {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1em;
   text-align: center;
   margin: 5px 0;
 }
+
+
+
+
+
+/*footer*/
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+
+
