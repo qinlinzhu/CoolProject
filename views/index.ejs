@@ -1,83 +1,110 @@
-
 <%- include('partials/header'); %>
-<div id="main">
-  <div class="container-fluid">
-    <div class="row">
-      <main role="main" class="col">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 sidenav">
+      <h4>Friends</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <div class="friends">
+          <li>Oslo</li>
+          <li>Stockholm</li>
+          <li>Helsinki</li>
+          <li>Berlin</li>
+          <li>Rome</li>
+          <li>Madrid</li>
+          <li>Bob</li>
+          <li>Oslo</li>
+          <li>Stockholm</li>
+          <li>Helsinki</li>
+          <li>Berlin</li>
+          <li>Rome</li>
+          <li>Madrid</li>
+          <li>Bob</li>
+          <li>Oslo</li>
+          <li>Stockholm</li>
+          <li>Helsinki</li>
+          <li>Berlin</li>
+          <li>Rome</li>
+          <li>Madrid</li>
+          <li>Bob</li>
+          <li>Oslo</li>
+          <li>Stockholm</li>
+          <li>Helsinki</li>
+          <li>Berlin</li>
+          <li>Rome</li>
+          <li>Madrid</li>
+          <li>Bob</li>
+          <li>Oslo</li>
+          <li>Stockholm</li>
+          <li>Helsinki</li>
+          <li>Berlin</li>
+          <li>Rome</li>
+          <li>Madrid</li>
+          <li>Bob</li>
+          <li>Oslo</li>
+          <li>Stockholm</li>
+          <li>Helsinki</li>
+          <li>Berlin</li>
+          <li>Rome</li>
+          <li>Madrid</li>
+          <li>Bob</li>
+        </div>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Friends..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+
+      </div>
+      <h4>groups</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <div class="groups">
+          <li>Oslo</li>
+          <li>Stockholm</li>
+          <li>Helsinki</li>
+          <li>Berlin</li>
+          <li>Rome</li>
+          <li>Madrid</li>
+          <li>Bob</li>
+          <li>Oslo</li>
+          <li>Stockholm</li>
+          <li>Helsinki</li>
+          <li>Berlin</li>
+          <li>Rome</li>
+          <li>Madrid</li>
+          <li>Bob</li>
+        </div>
+      </ul><br>
+    </div>
 
 
-        <div class="container">
 
-          <div class="row">
-            <div class="col-md-3">
-              
-            </div>
+    <div class="col-md-9">
+      <h4><small>group one</small></h4>
+      <hr>
+      <div class="chat_one">
 
-            <div class="col-md-9">
-              <div class="Search">
-                <a class="active" href="#home">Home</a>
-                <a href="#members">members</a>
-                <a href="#settings">Settings</a>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search..">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                      <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                  </span>
-                </div>
-                <a href="#pinned">pinned_msgicon</a>
+        <h2>I Love Food</h2>
+        <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+        <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+        <p>Hello. Do you want to view <a href="loggin.ejs">page 2</a> ?</p>
+        <br><br>
+      </div>
 
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 ">
-                <h4>Friends</h4>
-                <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#section1">Friends</a></li>
-                  <li><a href="#section2">Friends</a></li>
-                  <li><a href="#section3">Friends</a></li>
-                  <li><a href="#section3">Friends</a></li>
-                </ul><br>
-
-              </div>
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Officially Blogging</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-success">Lorem</span></h5><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
 
 
-              <div class="col-md-9">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-3">
-                <div class="Groups">
-                  <h1>Groups</h1>
-                  <div class="list_group">
-                    <a href="#" class="list_group">First group</a>
-                    <a href="#" class="list_group">Second group</a>
-                    <a href="#" class="list_group">Third group</a>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-9">
-                <div class="message">
-                  <input type="text" placeholder="message..">
-                  <a class="active" href="#files">files icon</a>
-                  <a href="#emoji">emoji icon</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-      </main>
-    </div> <!-- end .row -->
-  </div><!-- end .container-fluid -->
-</div><!-- end #main -->
-
-<%- include('partials/footer'); %> 
+      <%- include('partials/footer'); %>

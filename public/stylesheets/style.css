@@ -1,6 +1,8 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+
 }
 
 a {
@@ -62,8 +64,37 @@ footer {
 
 /*user image*/
 .rounded-circle {
-  width: 50%;
-  height:50%
+  width: 40%;
+  height:40%
 }
 
+/*Veritical line*/
+.vl {
+  border-left: 4px solid white;
+  
+  height: 100px;
+}
 
+div.friends {
+  background-color: lightblue;
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+div.groups {
+  background-color: lightblue;
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+div.chat_one {
+  background-color: lightblue;
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
