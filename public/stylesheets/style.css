@@ -57,25 +57,30 @@ a i {
 
 
 /*footer*/
-footer {
-  background-color: #555;
+.footer_strip {
+  background-color: black;
   color: white;
-  padding: 15px;
+  width: 100%;
+height: 3%;
 }
+
+
+
 
 
 /*user image*/
 .rounded-circle {
-  width: 40%;
-  height:40%
+  width: 20%;
+  height:20%
 }
 
-/*Veritical line*/
-.vl {
-  border-left: 4px solid white;
-  
-  height: 100px;
+.big_box {
+  height: 1000px;
+  width: 1000px;
+  margin: auto;
 }
+
+
 
 div.friends {
   background-color: #353F49  ;
@@ -84,17 +89,19 @@ div.friends {
   overflow: auto;
   font-family: Arial;
 	color: white;
-	font-size:20px;
+  font-size:20px;
+ 
 }
 
 div.groups {
   background-color: #353F49  ;
   width: 100%;
-  height: 300px;
+  height: 400px;
   overflow: auto;
   font-family: Arial;
 	color: white;
-	font-size:20px;
+  font-size:20px;
+  
 }
 
 div.chat_one {
@@ -108,16 +115,124 @@ div.chat_one {
 }
 
 
-.Send_message {
-  background-color: #242A30  ;
-  font-family: Arial;
-	color: white;
-	font-size:20px;
-  
-}
+
 
 .name_label {
   height:50px;
   color: white;
-  background-color: #242A30 
+  background-color: #242A30;
+  padding: 20px;
+}
+
+/*login*/
+.login-form {
+  width: 340px;
+  margin: 50px auto;
+  font-size: 15px;
+  color: white;
+  padding-bottom: 100px;
+}
+.login-form form {
+  margin-bottom: 15px;
+  background: #242A30;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.login-form h2 {
+  margin: 0 0 15px;
+}
+.form-control, .btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+.btn {        
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: auto;
+
+}
+
+/*header settings */
+.fa {
+  color: white;
+}
+
+.group_name {
+  background-color: lightgray;
+  height: 10%;
+  width: 10%0;
+
+}
+
+.chat_one {
+  padding-left: 2%;
+}
+
+/*send message box*/
+.Send_message {
+  background-color: #242A30 ;
+  font-family: Arial;
+  color: white;
+  font-size:20px;
+  padding: 20px;
+  height: 26%;
+    
+}
+
+
+
+
+
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #242A30 ;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #242A30 ;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
 }
