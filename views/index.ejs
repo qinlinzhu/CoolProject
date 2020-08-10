@@ -1,196 +1,70 @@
-<%- include('partials/header'); %>
-
-<div class="big_box">
-
-  <div class="container-fluid">
-    <div class="row m-0 p-0">
-      <div class="col-md-3 sidenav m-0 p-0">
-        <div class="name_label">
-          <h4>Friends</h4>
-        </div>
-        <div class="friends_box">
-         
-          <ul class="nav nav-pills nav-stacked">
-
-            <ul id='friend-list'>
-              <li class='friend'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Andres Perez
-                </div>
-              </li>
-              <li class='friend'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Leah Slaten
-                </div>
-              </li>
-              <li class='friend'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Mario Martinez
-                </div>
-              </li>
-              <li class='friend'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Cynthia Lo
-                </div>
-              </li>
-              <li class='friend'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Sally Lin
-                </div>
-              </li>
-              <li class='friend'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Danny Tang
-                </div>
-              </li>
-            </ul>
-        </div>
-        </ul>
+<!DOCTYPE html>
+<html lang="en">
 
 
-        <div class="name_label">
-          <h4>Groups</h4>
-        </div>
-        <div class="groups_box">
-          
-
-          <ul class="nav nav-pills nav-stacked">
-            <ul id='group-list'>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Andres Perez
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Leah Slaten
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Mario Martinez
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Cynthia Lo
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Sally Lin
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Danny Tang
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Andres Perez
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Leah Slaten
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Mario Martinez
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Cynthia Lo
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Sally Lin
-                </div>
-              </li>
-              <li class='group'>
-                <img src='images\johnny.png'>
-                <div class='name'>
-                  Danny Tang
-                </div>
-              </li>
-            </ul>
-        </div>
-      </div>
+<head>
+  <div class="header_big_box">
+    <title>App Name</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/2ea5bc6e34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
 
 
+  </div>
+
+</head>
+
+<body>
+<div id='row'>
+  <div id='col-md-12'>
 
 
-      <div class="col-md-9 m-0 p-0">
-        <div class="group_name">
-          <h4>group one</h4>
-        </div>
-        <div class="chat_one">
+      <div class="conatiner_index">
 
-          <div class="container">
-            <img src="images\johnny.png" alt="johnny">
-            <p>Hello. How are you today?</p>
-            <span class="time-right">11:00</span>
-          </div>
+        <!-- background image -->
+        <img class="indeximg" alt="background index img" src='images\indexone.jpg'>
 
-          <div class="container darker">
-            <img src="images\sadboy.jpg" alt="Me" class="right">
-            <p>Hey! I'm fine. Thanks for asking!</p>
-            <span class="time-left">11:01</span>
-          </div>
+        <!-- title and tag line with button -->
+        <div class="logo">
 
-          <div class="container">
-            <img src="images\johnny.png" alt="johnny">
-            <p>Sweet! So, what do you wanna do today?</p>
-            <span class="time-right">11:02</span>
-          </div>
+          <h1>Why big chat?</h1>
+          <p>simply way to talk to friends</p>
+          <div class="register_login">
 
-          <div class="container darker">
-            <img src="images\sadboy.jpg" alt="Me" class="right">
-            <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-            <span class="time-left">11:05</span>
-          </div>
-          <p>Do you want to <a href="/login">logout</a>?</p>
-
-          <br><br>
-        </div>
-        <div class="Send_message">
-          <h4>Message:</h4>
-          <form role="form">
-            <div class="form-group">
-              <textarea class="form-control" required></textarea>
-              <button type="Submit" class="btn btn-success">Send</button>
-
+            <div class="login_button">
+              <div class="form-group">
+                <a href="/login"><button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </a>
+              </div>
             </div>
 
-          </form>
-          <br><br>
+            <div class="register_button">
+              <div class="form-group">
+                <a href="/register"><button type="submit" class="btn btn-primary btn-block">register</button>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
         </div>
       </div>
-    </div>
+
+
+      <div class ="about_bigchat">
+
+        
+      </div>
+    </body>
+
   </div>
 </div>
 
 
 
-  <%- include('partials/footer'); %>
+<%- include('partials/footer'); %>

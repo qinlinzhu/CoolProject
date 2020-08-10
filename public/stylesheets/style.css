@@ -28,12 +28,97 @@ a i {
   text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.66);
 }
 
+/*------------------------------------------------------------index page----------------------------------------------------------*/
+/*------------------------------------------------------------index page----------------------------------------------------------*/
+
+
+/*news box*/
+
+.News_header {
+  height:80px;
+  padding-left: 5%;
+  padding-right: 50%;
+  color: white;
+  background-color: #242A30;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  justify-content: space-between;
+
+}
+
+ 
+
+.news_box {
+  background-color: #353F49  ;
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+  font-family: Arial;
+	color: white;
+  font-size:20px;
+  
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+}
+
+
+.index_box { 
+  color:#242A30
+}
+
+
+
+/*-------------------------------------------------------*/
+
+
+
+/* bluring the image */ 
+.indeximg { 
+  height: 600px;
+  width: 1365px;
+  margin: auto;
+} 
+    
+/* designing title and tag line */ 
+.logo { 
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+} 
+
+
+    
+/* Designing button */ 
+.logo button { 
+  border: none; 
+  outline: 0; 
+  display: inline-block; 
+  padding: 10px 25px; 
+  color: black; 
+  background-color: #ddd; 
+  text-align: center; 
+  cursor: pointer 
+} 
+.logo button:hover { 
+  background-color: lightblue; 
+  color: white; 
+} 
+/*------------------------------------------------------------index page end----------------------------------------------------------*/
 
 
 
 
 
-/*col*/
+/*------------------------------------------------------------col----------------------------------------------------------*/
 .row:last-of-type {
   margin-bottom: 0;
 }
@@ -56,6 +141,7 @@ a i {
   text-align: center;
   margin: 5px 0;
 }
+/*------------------------------------------------------------col end----------------------------------------------------------*/
 
 
 
@@ -63,15 +149,8 @@ a i {
 
 
 
-/*footer*/
-.footer_strip {
-  background-color: black;
-  color: white;
-  width: 100%;
-height: 3%;
-}
 
-
+/*------------------------------------------------------------logged in and group one----------------------------------------------------------*/
 
 
 
@@ -87,15 +166,68 @@ height: 3%;
 /*boxes*/
 .big_box {
   height: 600px;
-  width: 1350px;
+  width: 1365px;
   margin: auto;
 }
+
+
+
+
+
+
+
+
+
+
 
 .header_big_box {
-  width: 1350px;
+  width: 1365px;
   margin: auto;
 }
 
+
+
+
+
+
+.groups_header {
+  height:80px;
+  padding-left: 5%;
+  padding-right: 50%;
+  color: white;
+  background-color: #242A30;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  justify-content: space-between;
+
+}
+
+.add_people {
+  font-size: 30px;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.add_friends {
+  font-size: 20px;
+  padding-bottom: 5%;
+  color: white;
+}
+
+/*freinds friends riends*/
+
+.friends_header {
+  height:80px;
+  padding-left: 5%;
+  padding-right: 50%;
+  color: white;
+  background-color: #242A30;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  justify-content: space-between;
+}
 
 .friends_box {
   background-color: #353F49  ;
@@ -143,18 +275,54 @@ height: 3%;
   
 
 .friend:not(.selected):hover {
-  background: #DDD;
+  background: #3a3a45;
 }
 
 
 
 
 
+.groupchat_box {
+  height: 80px;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+
+}
+
+
+.groupchat_box img {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  border: 2px solid #AAA;
+  object-fit: cover;
+  
+  
+}
+
+
+/*group group group*/
+
+.group_name {
+  height:80px;
+  padding-left: 5%;
+  color: white;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+
 
 .groups_box {
   background-color: #353F49  ;
   width: 100%;
-  height: 400px;
+  height: 260px;
   overflow: auto;
   font-family: Arial;
 	color: white;
@@ -198,14 +366,14 @@ height: 3%;
   
 
 .group:not(.selected):hover {
-  background: #DDD;
+  background: #3a3a45;
 }
 
 
 .chat_one {
   background-color: #353F49  ;
   width: 100%;
-  height: 500px;
+  height: 540px;
   overflow: auto;
   font-family: Arial;
 	color: white;
@@ -215,13 +383,116 @@ height: 3%;
 
 
 
-.name_label {
-  height:50px;
+
+/*header settings */
+.fa {
   color: white;
-  background-color: #242A30;
-  padding: 20px;
+  
 }
 
+
+/*messages settings*/
+
+
+.chat_one {
+  padding-left: 2%;
+}
+
+.container_msg {
+  border: 2px solid #dedede;
+  background-color: #353F49;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  
+ 
+
+}
+
+
+.container_msg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container_msg img {
+  float: left;
+  max-width: 40px;
+  width: 100%;
+  margin-right: 3%;
+  border-radius: 50%;
+}
+
+.container_msg img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time_right {
+  float: right;
+  font-size: 15px;
+  color: grey;
+}
+
+.time_left {
+  float: left;
+  font-size: 15px;
+  color: grey;
+}
+
+.msg_text{
+font-size: 15px;
+padding-top: 10px;
+}
+
+
+
+/*type message*/
+
+.btn{
+  color:black;
+  background-color: white;
+  border: black;
+
+}
+
+
+.input-group{
+  width: 700px;
+}
+
+.sendmsg_box {
+  height:100px;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  background-color: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  justify-content: space-between;
+}
+
+.upload_file {
+  font-size: 40px;
+}
+
+.emoji {
+  font-size: 40px;
+}
+
+
+
+/*------------------------------------------------------------login in and group one end----------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------login----------------------------------------------------------*/
 /*login*/
 .login-form {
   width: 340px;
@@ -254,6 +525,13 @@ height: 3%;
 }
 
 
+/*------------------------------------------------------------login end----------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------registration----------------------------------------------------------*/
 /*registration form*/
 .registration-form {
   width: 340px;
@@ -261,86 +539,53 @@ height: 3%;
   font-size: 15px;
   color: white;
 }
-/*header settings */
-.fa {
-  color: white;
-  
+
+
+.registration-form form {
+  margin-bottom: 15px;
+  background: #242A30;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.registration-form h2 {
+  margin: 0 0 15px;
+}
+.form-control, .btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+.btn {        
+  font-size: 15px;
+  font-weight: bold;
 }
 
+.container-fluid {
+  padding: 0;
+  margin: auto;
 
-
-.chat_one {
-  padding-left: 2%;
 }
 
-/*send message box*/
-.Send_message {
-  background-color: #242A30 ;
-  font-family: Arial;
-  color: white;
-  font-size:20px;
-  padding: 20px;
-  height: 26%;
-    
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-
-
-/* Chat containers */
-.container {
-  border: 2px solid #dedede;
-  background-color: #242A30 ;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
+.back :hover {
+  background-color: lightblue; 
+  color: white; 
 }
+/*------------------------------------------------------------registration end----------------------------------------------------------*/
 
-/* Darker chat container */
-.darker {
-  border-color: #ccc;
-  background-color: #242A30 ;
-}
 
-/* Clear floats */
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
-/* Style images */
-.container img {
-  float: left;
-  max-width: 60px;
+/*footer*/
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-/* Style the right image */
-.container img.right {
-  float: right;
-  margin-left: 20px;
-  margin-right:0;
-}
-
-/* Style time text */
-.time-right {
-  float: right;
-  color: #aaa;
-}
-
-/* Style time text */
-.time-left {
-  float: left;
-  color: #999;
-}
-
-.group_name{
-background-color: #353F49;
-height: 5%;
-width: 10%0;
-color: white;
+  background-color: #353F49;
+  color: white;
+  text-align: center;
 }
