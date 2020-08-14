@@ -11,6 +11,20 @@
 <div class="footer">
     <p>Bigchat</p>
 </div>
+<% //ALL LOCALS DATA %>
+<% if (locals.errors) { %>
+	<% var errorKeys = JSON.stringify(Object.keys(locals.errors)); %>
+	<p>Error keys: <%= errorKeys %></p>
+	<% var errorData = JSON.stringify(locals.errors); %>
+	<p>Errors: <%= errorData %></p>
+<% } %>
+<% if (locals.user) { %>
+	<% var userKeys = JSON.stringify(Object.keys(locals.user)); %>
+	<p>User keys: <%= userKeys %></p>
+	<% var userData = JSON.stringify(locals.user); %>
+	<p>User: <%= userData %></p>
+<% } %>
+  	
 </body>
 
 </html>

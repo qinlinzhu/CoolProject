@@ -16,7 +16,7 @@
 <body>
     <div class="login-form">
         <form action="/login" method="post">
-            <h2 class="text-center">Bigchat Log in</h2>       
+            <h2 class="text-center">Bigchat Log in</h2>
             <div class="form-group">
                 <input type="text" name="email" class="form-control" placeholder="Username" required="required">
             </div>
@@ -24,14 +24,21 @@
                 <input type="password" name="password" class="form-control" placeholder="Password" required="required">
             </div>
             <div class="form-group">
-                <a href="/groupone"><button type="submit" class="btn btn-primary btn-block">Log in</button>
-                </a>
+                <button type="submit" class="btn btn-primary btn-block">Log in</button>
+
             </div>
+
+            <% if (locals.errors && locals.errors.login) { %>
+            <% locals.errors.login.forEach(function(error) { %>
+            <p class="alert alert-primary" role="alert"><%= error %></p>
+            <% }) %>
+            <% } %>
+
             <div class="clearfix">
                 <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
                 <a href="#" class="float-right">Forgot Password?</a>
-            </div>      
-            <br>  
+            </div>
+            <br>
             <div class="back button">
                 <input type="button" value="back" onclick="history.go(-1)">
             </div>

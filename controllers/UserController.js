@@ -101,12 +101,12 @@ class UserController{
                 }).catch((error) => {
                     // Firebase login has failed, so return Firebase errors
                     request.session.errors.login = [error.message];
-                    response.redirect('/');
+                    response.redirect('/login');
                 });
         } catch(errors) {
             // Form has failed validation, so return errors
             request.session.errors.login = errors;
-            response.redirect('/');
+            response.redirect('/login');
         }
     };
 
@@ -131,14 +131,14 @@ class UserController{
                     // registration successful, so redirect to account
                     response.redirect('/account');
                 }).catch((error) => {
-                    // Firebase registration has failed, so return Firebase errors
+                    // Firebase registration has failed, so return to index page
                     request.session.errors.register = [error.message];
-                    response.redirect('/');
+                    response.redirect('/register');
                 });
         } catch(errors) {
             // Form has failed validation, so return errors
             request.session.errors.register = errors;
-            response.redirect('/');
+            response.redirect('/register');
         }
     };
 

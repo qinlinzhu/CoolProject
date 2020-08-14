@@ -1,20 +1,61 @@
-<div class="">
-    <div class="row">
-        <div class="col-md-5">
-            <img src="images\sadboy.jpg" alt="Alternate Text" class="img-responsive" />
-            <p class="text-center small">
-                <a href="#">Change Photo</a></p>
+<%- include('partials/header'); %>
+
+<div class="row">
+    <div id='col-md-12'>
+        <div class="update">
+
+            <form action="/account" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="displayName" placeholder="Display Name"
+                        value="<%= locals.user.displayName %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="Email"
+                        value="<%= locals.user.email %>">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="file" name="avatar">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Update</button>
+                </div>
+                <% if (locals.errors && locals.errors.profile) { %>
+                    <% locals.errors.profile.forEach(function(error) { %>
+                    <p class="alert alert-primary" role="alert"><%= error %></p>
+                    <% }) %>
+                    <% } %>
+
         </div>
-        <div class="col-md-7">
-            <span>user name</span>
-            <di class="email">
-                email@gmail.com<vdic>
-                    <div class="divider">
-                    </div>
-                    <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
+
+
+
+        </form>
+
+        <div class="update">
+            <form action="/password" method="post">
+
+
+
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="passwordConfirm" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Update Password</button>
+                </div>
+
+
+                <% if (locals.errors && locals.errors.password) { %>
+                <% locals.errors.password.forEach(function(error) { %>
+                <p class="alert alert-primary" role="alert"><%= error %></p>
+                <% }) %>
+                <% } %>
+
+
+            </form>
         </div>
-        <p>Do you want to <a href="/login">logout</a>?</p>
     </div>
 </div>
-
 <%- include('partials/footer'); %>
