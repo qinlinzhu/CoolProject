@@ -1,0 +1,71 @@
+
+<%- include('partials/header'); %>
+
+<% 
+var channels = locals.channels
+var owned = ("owned" in  channels) ? channels.owned : false
+var subscribed = ("subscribed" in  channels) ? channels.subscribed : false
+%>
+<% var users = locals.channels.users %>
+<form id="channel-create-form" action="/channels/add" method="post" enctype="multipart/form-data">
+	<input type="text" class="form-control" name="name" placeholder="Channel Name" value="">
+	<input type="file" class="custom-file-input" name="avatar" id="avatar-upload">
+	<% if (users) { %>
+		<% users.forEach(function(user) { %>
+			<input class="user-check-input" id="user<%= user.id %>" type="checkbox" name="users" value="<%= user.id %>">
+			<p><%= user.name %></p>
+		<% }) %>
+	<% } %>
+	<button id="update" type="submit">Create</button>
+</form>
+<div id="owned-channels" class="user-channels">
+	<h4>Your Channels</h4>
+<% if (owned) { %>
+	<ul>
+	<% owned.forEach(function(channel) { %>
+		<li>
+			<img src="<%= channel.image %>" alt="<%= channel.name %>">
+			<a href="/channel/<%= channel.id %>/"><%= channel.name %></a>
+			<a href="/channels/delete/<%= channel.id %>/"><i class="fa fa-trash" aria-hidden="true"></i></a>
+		</li>
+	<% }) %>
+	</ul>
+<% }  %>
+</div>
+<div id="subscribed-channels" >
+	<h4>Subscribed Channels</h4>
+<% if (subscribed) { %>
+	<ul>
+	<% subscribed.forEach(function(channel) { %>
+		<li>
+			<img src="<%= channel.image %>" alt="<%= channel.name %>">
+			<a href="/channel/<%= channel.slug %>/"><%= channel.name %></a>
+		</li>
+	<% }) %>
+	</ul>
+<% }  %>
+</div>
+  	
+
+
+
+<div id="add-user" class="row m-0 p-0 row-horizon d-flex flex-row flex-nowrap scrolling-wrapper">
+    <% if (users) { %>
+        <% users.forEach(function(user) { %>
+            <div class="col-3 border border-dark m-1 p-1">
+                <div class="row p-0 m-0 justify-content-center">
+                    <img src="<%= user.image %>" alt="<%= user.image %>" class="rounded-circle border border-dark text-center maxsize-12vw">
+                </div>
+                <div class="row p-0 m-0 justify-content-center">
+                    <div class="div">
+                        <%= user.name %>
+                        <input id="user<%= user.id %>" type="checkbox" class=""  name="users" value="<%= user.id %>">
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    <% } %>
+</div>
+
+
+<%- include('partials/footer'); %>

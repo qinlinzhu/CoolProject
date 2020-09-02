@@ -1,0 +1,320 @@
+
+
+
+
+  
+/*------------------------------------------------------------registration end----------------------------------------------------------*/
+
+
+/*------------------------------------------------------------account----------------------------------------------------------*/
+/*account*/
+
+.account-form {
+  
+    font-size: 15px;
+    color: white;
+  }
+  .account-form form {
+   
+    background: #242A30;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .account-form h2 {
+    margin: 0 0 15px;
+  }
+  .form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+  }
+  .btn {        
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .container-fluid {
+    padding: 0;
+    margin: auto;
+  
+  }
+  
+  .account-box {
+    height: 600px;
+    width: 1365px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+  }
+  
+  
+  
+  
+  /*------------------------------------------------------------account end----------------------------------------------------------*/
+  
+  body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: 0;
+    height: 100%;
+    background-color: #353F49 ;
+  
+  
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+  
+  a i {
+    margin-right: 0.4rem;
+  }
+  
+  col{
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  /*error*/
+  .error404{
+    text-align: center;
+  }
+  .error404 h1{
+    width: 100%;
+    font-size: 30rem;
+    font-weight: bold;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.66);
+  }
+  
+  /*------------------------------------------------------------index page----------------------------------------------------------*/
+  /*------------------------------------------------------------index page----------------------------------------------------------*/
+  
+  
+  /*news box*/
+  
+  .News_header {
+    height:80px;
+    padding-left: 5%;
+    padding-right: 50%;
+    color: white;
+    background-color: #242A30;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    justify-content: space-between;
+  
+  }
+  
+  
+  
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+  }
+  
+  
+  .index_box { 
+    color:#242A30
+  }
+  
+  
+  
+  /* bluring the image */ 
+  .indeximg { 
+    height: 600px;
+    width: 1365px;
+    margin: auto;
+  } 
+      
+  /* designing title and tag line */ 
+  .logo { 
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  } 
+  
+  
+      
+  /* Designing button */ 
+  .logo button { 
+    border: none; 
+    outline: 0; 
+    display: inline-block; 
+    padding: 10px 25px; 
+    color: black; 
+    background-color: #ddd; 
+    text-align: center; 
+    cursor: pointer 
+  } 
+  .logo button:hover { 
+    background-color: lightblue; 
+    color: white; 
+  } 
+  /*------------------------------------------------------------index page end----------------------------------------------------------*/
+  
+  
+  
+  
+  
+  /*------------------------------------------------------------col----------------------------------------------------------*/
+  .row:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .col-3 {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .col-3 {
+    padding: 1em;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .col-9 {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .col-9 {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    text-align: center;
+    margin: 5px 0;
+  }
+  /*------------------------------------------------------------col end----------------------------------------------------------*/
+  
+  
+  
+  
+  /*------------------------------------------------------------logged in and group one----------------------------------------------------------*/
+  
+  
+  
+  /*user image*/
+  .rounded-circle {
+    width: 20%;
+    height:30%;
+    object-fit: cover;
+  }
+  
+  
+  
+  /*------------------------------------------------------------login in and group one end----------------------------------------------------------*/
+  
+  
+  
+  
+  /*------------------------------------------------------------login----------------------------------------------------------*/
+  /*login*/
+  .login-form {
+    width: 340px;
+    margin: 50px auto;
+    font-size: 15px;
+    color: white;
+  }
+  .login-form form {
+    margin-bottom: 15px;
+    background: #242A30;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  .login-form h2 {
+    margin: 0 0 15px;
+  }
+  .form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+  }
+  .btn {        
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .container-fluid {
+    padding: 0;
+    margin: auto;
+  
+  }
+  
+  
+  /*------------------------------------------------------------login end----------------------------------------------------------*/
+  
+  
+  
+  /*------------------------------------------------------------registration----------------------------------------------------------*/
+  /*registration form*/
+  .registration-form {
+    width: 340px;
+    margin: 50px auto;
+    font-size: 15px;
+    color: white;
+  }
+  
+  
+  .registration-form form {
+    margin-bottom: 15px;
+    background: #242A30;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  .registration-form h2 {
+    margin: 0 0 15px;
+  }
+  .form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+  }
+  .btn {        
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .container-fluid {
+    padding: 0;
+    margin: auto;
+  
+  }
+  
+  .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .back :hover {
+    background-color: lightblue; 
+    color: white; 
+  }
+  
+  
+  
+  
+  .button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+
+  /*footer*/
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #353F49;
+  color: white;
+  text-align: center;
+}

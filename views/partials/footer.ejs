@@ -8,21 +8,27 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
 
-<div class="footer">
-    <p>Bigchat</p>
-</div>
+<footer>
+	<p>Big Chat</p>
+</footer>
 <% //ALL LOCALS DATA %>
 <% if (locals.errors) { %>
-	<% var errorKeys = JSON.stringify(Object.keys(locals.errors)); %>
-	<p>Error keys: <%= errorKeys %></p>
-	<% var errorData = JSON.stringify(locals.errors); %>
-	<p>Errors: <%= errorData %></p>
+<% var errorKeys = JSON.stringify(Object.keys(locals.errors), null, 2); %>
+<pre>Error keys: <%= errorKeys %></pre>
+<% var errorData = JSON.stringify(locals.errors, null, 2); %>
+<pre>Errors: <%= errorData %></pre>
 <% } %>
 <% if (locals.user) { %>
-	<% var userKeys = JSON.stringify(Object.keys(locals.user)); %>
-	<p>User keys: <%= userKeys %></p>
-	<% var userData = JSON.stringify(locals.user); %>
-	<p>User: <%= userData %></p>
+<% var userKeys = JSON.stringify(Object.keys(locals.user), null, 2); %>
+<pre>User keys: <%= userKeys %></pre>
+<% var userData = JSON.stringify(locals.user, null, 2); %>
+<pre>User: <%= userData %></pre>
+<% } %>
+<% if (locals.channels) { %>
+<% var channelKeys = JSON.stringify(Object.keys(locals.channels), null, 2); %>
+<pre>Channel keys: <%= channelKeys %></pre>
+<% var channels = JSON.stringify(locals.channels, null, 2); %>
+<pre>Channels: <%= channels %></pre>
 <% } %>
   	
 </body>

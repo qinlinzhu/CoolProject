@@ -1,51 +1,59 @@
-<%- include('partials/header'); %>
+<%- include('partials/accountheader'); %>
 
-<div class="row">
-    <div id='col-md-12'>
-        <div class="update">
+<form class="row pt-5">
+    <form action="/account" method="post" enctype="multipart/form-data" class="col-12 p-0 pt-5 row m-0">
+        <div class="col-4">
+            <img src="<%= user.photoURL %>" alt="avatar" class="rounded-circle border border-dark">
 
-            <form action="/account" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <h7>Avatar</h7>
+                <input class="form-control" type="file" name="avatar">
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="col">
                 <div class="form-group">
+                    <h7>Current Username</h7>
+                    <input type="accountName" class="form-control" placeholder="Current account name"
+                        value="<%= locals.user.displayName %>" readonly>
+                    <h7>New Username</h7>
                     <input class="form-control" type="text" name="displayName" placeholder="Display Name"
                         value="<%= locals.user.displayName %>">
                 </div>
                 <div class="form-group">
+                    <h7>Current Email</h7>
+                    <input type="email" class="form-control" aria-describedby="emailHelp"
+                        placeholder="Current email" value="<%= locals.user.email %>" readonly>
+                    <h7>New Email</h7>
                     <input class="form-control" type="email" name="email" placeholder="Email"
                         value="<%= locals.user.email %>">
                 </div>
+
                 <div class="form-group">
-                    <input class="form-control" type="file" name="avatar">
-                </div>
-                <div class="form-group">
-                    <button type="submit">Update</button>
+                    <button class="button" type="submit">Update</button>
                 </div>
                 <% if (locals.errors && locals.errors.profile) { %>
-                    <% locals.errors.profile.forEach(function(error) { %>
-                    <p class="alert alert-primary" role="alert"><%= error %></p>
-                    <% }) %>
-                    <% } %>
-
-        </div>
-
-
-
-        </form>
-
-        <div class="update">
-            <form action="/password" method="post">
-
-
+                <% locals.errors.profile.forEach(function(error) { %>
+                <p class="alert alert-primary m-0" role="alert"><%= error %></p>
+                <% }) %>
+                <% } %>
+            </div>
+    </form>
+        <div class="col">
+            <form action="/password" method="post" class="p-0" >
+                <h5>Password Change</h5>
+                <h7>Password</h7>
 
                 <div class="form-group">
                     <input class="form-control" type="password" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="password" name="passwordConfirm" placeholder="Confirm Password">
+                    <input class="form-control" type="password" name="passwordConfirm"
+                        placeholder="Confirm Password">
                 </div>
                 <div class="form-group">
-                    <button type="submit">Update Password</button>
+                    <button class="button" type="submit">Update Password</button>
                 </div>
-
 
                 <% if (locals.errors && locals.errors.password) { %>
                 <% locals.errors.password.forEach(function(error) { %>
@@ -53,9 +61,9 @@
                 <% }) %>
                 <% } %>
 
-
             </form>
         </div>
     </div>
-</div>
+</form>
 <%- include('partials/footer'); %>
+
