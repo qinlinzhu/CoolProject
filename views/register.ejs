@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>App Name</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/2ea5bc6e34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <div class="h-100 d-flex justify-content-center align-items-center bg-dark">
+        <div class="login-box p-5 text-center border">
+            <div class="login-form">
+                <form action="/register" method="post" class="col-12 p-0 dark">
+
+                    <h2 class="text-center">Bigchat registration</h2>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email">
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password" >
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirm Password" >
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Create</button>
+                    </div>
+        
+                    <% if (locals.errors && locals.errors.register) { %>
+                    <% locals.errors.register.forEach(function(error) { %>
+                    <p class="alert alert-primary" role="alert"><%= error %></p>
+                    <% }) %>
+                    <% } %>
+        
+                    <div class="back button">
+                        <input type="button" value="back" onclick="history.go(-1)">
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<%- include('partials/footer'); %>

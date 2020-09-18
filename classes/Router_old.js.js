@@ -12,8 +12,8 @@ class Router{
 
     constructor(){
         this.setVariables();
-        this.addControllers();
         this.addBaseRoutes();
+        this.addControllers();
         this.handle404s();
         this.handleErrors();
     }
@@ -23,20 +23,7 @@ class Router{
      * to local values
      */
     setVariables(){
-
-        AraDTApp.use(async (request, response, next) => {
-
-            console.log("################# Session Data #####################");
-            console.log(request.session);
-            // Check if user logged in for this session
-            if (request.session.user) {
-                response.locals.user = request.session.user;
-                response.locals.loggedin = true;
-            }
-
-            response.locals.channels = {};
-            await this.fetchAllChannelsData(response);
-            
+        AraDTApp.use(function(request, response, next) {
             if (request.session.errors) {
                 response.locals.errors = request.session.errors;
             }
@@ -55,21 +42,21 @@ class Router{
     }
 
 
-    /**
+     /**
      * Add controllers for key models, 
      * e.g. Users, Channels, Messages
      */
     addControllers() {
-        var channelController = new ChannelController();
         var userController = new UserController();
-        channelController.addRoutes();
-        userController.addRoutes();
+        var channelController = new ChannelController();
     }
+	
 
     // Renders home page ./views/index.ejs
     index(request, response, next) {
         response.render('index');
     }
+    
 
     // Adds middleware to add HTTP Error to 404 requests
     handle404s() {
@@ -83,7 +70,6 @@ class Router{
         
         //  error handler
         AraDTApp.use(function(error, request, response, next) {
-            
             if (error) {
                 console.log('Error', error);
             }
@@ -96,12 +82,12 @@ class Router{
             response.render('error');
         });
     }
-    
-    fetchAllChannelsData = async (response) => {
-        response.locals.channels.all = await AraDTChannelModel.getAllChannels();
-        console.log("################# All Channels Data #####################");
-        console.log(response.locals.channels.all);
-    }
 
 }
+
+
+
+
+
+
 module.exports = Router;
