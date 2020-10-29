@@ -75,12 +75,12 @@ class UserController{
                 }).catch((error) => {
                     // Firebase login has failed, so return Firebase errors
                     request.session.errors.login = [error.message];
-                    response.redirect('/');
+                    response.redirect('/login');
                 });
         } catch(errors) {
             // Form has failed validation, so return errors
             request.session.errors.login = errors;
-            response.redirect('/');
+            response.redirect('/login');
         }
     };
 
